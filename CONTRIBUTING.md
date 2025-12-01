@@ -105,7 +105,7 @@ Closes #123
 
 ```bash
 # Clone your fork
-git clone https://github.com/yourusername/comet-monkey.git
+git clone https://github.com/Yashraj786/comet-monkey.git
 cd comet-monkey
 
 # Install dependencies

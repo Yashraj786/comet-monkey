@@ -24,16 +24,16 @@
     "e2e",
     "fuzzing"
   ],
-  "author": "Your Name <your.email@example.com>",
+  "author": "Yash Ramteke <yash.ramteke369@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/comet-monkey.git"
+    "url": "https://github.com/Yashraj786/comet-monkey.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/comet-monkey/issues"
+    "url": "https://github.com/Yashraj786/comet-monkey/issues"
   },
-  "homepage": "https://github.com/yourusername/comet-monkey#readme",
+  "homepage": "https://github.com/Yashraj786/comet-monkey#readme",
   "engines": {
     "node": ">=16.0.0"
   },

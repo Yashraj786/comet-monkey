@@ -1,6 +1,6 @@
 # 🐵 comet-monkey.js
 
-[![GitHub stars](https://img.shields.io/github/stars/yourusername/comet-monkey.svg?style=social&label=Stars)](https://github.com/yourusername/comet-monkey)
+[![GitHub stars](https://img.shields.io/github/stars/Yashraj786/comet-monkey.svg?style=social&label=Stars)](https://github.com/Yashraj786/comet-monkey)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Node.js Version](https://img.shields.io/badge/node-%3E%3D16-brightgreen)](https://nodejs.org/)
 [![Playwright Version](https://img.shields.io/badge/playwright-%3E%3D1.57-blue)](https://playwright.dev/)
@@ -43,7 +43,7 @@ Perfect for:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/comet-monkey.git
+git clone https://github.com/Yashraj786/comet-monkey.git
 cd comet-monkey
 
 # Install dependencies
@@ -435,9 +435,9 @@ Inspired by:
 
 ## 📞 Support
 
-- **Issues**: [GitHub Issues](https://github.com/yourusername/comet-monkey/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/comet-monkey/discussions)
-- **Email**: your.email@example.com
+- **Issues**: [GitHub Issues](https://github.com/Yashraj786/comet-monkey/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/Yashraj786/comet-monkey/discussions)
+- **Email**: yash.ramteke369@gmail.com
 
 ## 🗺️ Roadmap
 
