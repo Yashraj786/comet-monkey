@@ -1,0 +1,47 @@
+{
+  "name": "comet-monkey",
+  "version": "1.0.0",
+  "description": "Autonomous browser testing framework with Playwright. Discover bugs through intelligent random exploration, network analysis, and extended testing sessions.",
+  "type": "commonjs",
+  "main": "src/comet-monkey.js",
+  "scripts": {
+    "start": "node src/comet-monkey.js",
+    "test:basic": "node src/comet-monkey.js",
+    "test:network": "node src/comet-monkey-detailed.js",
+    "test:interactive": "node src/comet-monkey-interactive.js",
+    "test:extended": "node src/comet-monkey-extended.js",
+    "test:all": "npm run test:basic && npm run test:network && npm run test:interactive && npm run test:extended"
+  },
+  "keywords": [
+    "testing",
+    "playwright",
+    "autonomous",
+    "exploration",
+    "bug-detection",
+    "web-automation",
+    "qa",
+    "browser-testing",
+    "e2e",
+    "fuzzing"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/comet-monkey.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/comet-monkey/issues"
+  },
+  "homepage": "https://github.com/yourusername/comet-monkey#readme",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "dependencies": {
+    "playwright": "^1.57.0"
+  },
+  "devDependencies": {},
+  "bin": {
+    "comet-monkey": "src/comet-monkey.js"
+  }
+}
