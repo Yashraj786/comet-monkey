@@ -14,6 +14,9 @@ const { chromium, firefox, webkit } = require('playwright');
 const ConfigLoader = require('../lib/config-loader');
 const SmartInteractionEngine = require('../lib/smart-interaction-engine');
 const HTMLReportGenerator = require('../lib/html-report-generator');
+const AccessibilityTester = require('../lib/accessibility-tester');
+const PerformanceTester = require('../lib/performance-tester');
+const SecurityTester = require('../lib/security-tester');
 const fs = require('fs');
 const path = require('path');
 
@@ -44,6 +47,9 @@ const report = {
   errors: [],
   warnings: [],
   screenshots: [],
+  accessibility: {},
+  performance: {},
+  security: {},
   total: 0,
   passed: 0,
   failed: 0
