@@ -1,0 +1,79 @@
+# 🐵 comet-monkey Configuration File
+# This file configures the autonomous testing framework
+# Copy this to comet-monkey.yml and customize for your site
+
+# Browser Configuration
+browser:
+  headless: true              # Run browsers in headless mode
+  browsers:                   # Browsers to test on
+    - chromium               # - chromium (Chrome)
+    - firefox                # - firefox  
+    - webkit                 # - webkit (Safari)
+  device_profiles:           # Device types to test
+    - mobile                 # - mobile (375x667)
+    - tablet                 # - tablet (768x1024)
+    - desktop                # - desktop (1920x1080)
+
+# Testing Configuration
+testing:
+  base_url: ${BASE_URL}      # Base URL to test (can use env vars)
+  timeout: 30000              # Page load timeout (ms)
+  max_interactions: 10        # Max random interactions per page
+  interaction_delay: 300      # Delay between interactions (ms)
+  session_duration_ms: 60000  # Extended session duration (ms)
+
+# Test Selection
+tests:
+  enabled:                    # Which test suites to run
+    - basic                   # Basic health checks
+    - network                 # Network analysis
+    - interactive             # Interactive testing (smart)
+    - extended                # Extended session (60s)
+  custom_hooks: null          # Path to custom test hooks (./tests/hooks.js)
+
+# Report Configuration
+report:
+  format:                     # Report output formats
+    - json                    # JSON report
+    - html                    # HTML report
+  output_dir: ./playwright-screenshots  # Report output directory
+  compare_baseline: false     # Compare against baseline
+  verbose: false              # Verbose logging
+
+# ============================================================================
+# USAGE EXAMPLES:
+# ============================================================================
+#
+# 1. Run with this config file:
+#    npx comet-monkey --config comet-monkey.yml
+#
+# 2. Override base URL with environment variable:
+#    BASE_URL=https://example.com npx comet-monkey
+#
+# 3. Test only on specific browsers:
+#    BROWSERS=chromium,firefox npx comet-monkey
+#
+# 4. Increase number of interactions:
+#    MAX_INTERACTIONS=20 npx comet-monkey
+#
+# 5. Custom output directory:
+#    OUTPUT_DIR=./my-reports npx comet-monkey
+#
+# 6. Verbose logging:
+#    VERBOSE=true npx comet-monkey
+#
+# ============================================================================
+# ENVIRONMENT VARIABLES:
+# ============================================================================
+#
+# BASE_URL          - URL to test
+# TIMEOUT           - Page load timeout
+# MAX_INTERACTIONS  - Number of interactions
+# BROWSERS          - Comma-separated: chromium,firefox,webkit
+# DEVICES           - Comma-separated: mobile,tablet,desktop
+# HEADLESS          - true or false
+# OUTPUT_DIR        - Report output directory
+# REPORT_FORMAT     - Comma-separated: json,html
+# VERBOSE           - true or false
+#
+# ============================================================================

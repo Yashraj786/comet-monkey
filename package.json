@@ -5,12 +5,15 @@
   "type": "commonjs",
   "main": "src/comet-monkey.js",
   "scripts": {
-    "start": "node src/comet-monkey.js",
+    "start": "node src/comet-monkey-unified.js",
+    "test": "node src/comet-monkey-unified.js",
     "test:basic": "node src/comet-monkey.js",
     "test:network": "node src/comet-monkey-detailed.js",
     "test:interactive": "node src/comet-monkey-interactive.js",
     "test:extended": "node src/comet-monkey-extended.js",
-    "test:all": "npm run test:basic && npm run test:network && npm run test:interactive && npm run test:extended"
+    "test:all": "npm run test:basic && npm run test:network && npm run test:interactive && npm run test:extended",
+    "test:unified": "node src/comet-monkey-unified.js",
+    "test:with-config": "node src/comet-monkey-unified.js --config comet-monkey.yml"
   },
   "keywords": [
     "testing",
@@ -38,7 +41,8 @@
     "node": ">=16.0.0"
   },
   "dependencies": {
-    "playwright": "^1.57.0"
+    "playwright": "^1.57.0",
+    "yaml": "^2.3.4"
   },
   "devDependencies": {},
   "bin": {
